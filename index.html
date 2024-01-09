@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>11133027 徐睦竺 期末作業</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+    *{box-sizing: border-box;}
+    body {
+      font-family: Noto Sans TC, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url(圖片庫/底色.png) no-repeat center center fixed; /* 替換 'background-image.jpg' 為您的背景圖片路徑 */
+    background-size: cover;
+    }
+
+    header {
+    width: 100%;
+    margin-bottom: 20px;
+    padding:15px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;/*上下居中*/
+    position: sticky;
+    top: 20px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+header img {
+    max-height: 60px;
+  }
+header h1 {
+    margin-right: auto;/*讓 menu 到右邊去*/}
+    ul.menu {
+        display: flex; /*讓選單橫排*/
+        list-style: none;/*清除圓點*/
+        margin: 0;/*清除 ul 額外空間*/
+        padding: 0;/*清除 ul 額外空間*/
+        gap: 12px;
+        flex: 0  0 auto; /* 設置固定寬度 */
+    }
+    ul.menu a {
+        /*超連結的正常狀態*/
+        padding: 10px 20px;
+        background-color: #ddd; 
+        border-radius: 20px;
+        font-family: Noto Sans TC, sans-serif;
+        font-size: 24px;
+    }
+    ul.menu a:hover {
+        /*當滑鼠移上超連結時的狀態*/
+        background-color: #9c9c9c;
+        border-radius: 20px;
+        font-family: Noto Sans TC, sans-serif;
+        font-size: 24px;
+    }
+
+    .main-image {
+      max-width: 100%;
+      border-radius: 20px; /* 圓角 */
+      height: auto;
+      display: block;
+      margin: auto;
+      padding: 20px;
+      
+    }
+
+    .container {
+        display: grid;
+      grid-template-columns: repeat(4, 1fr); /* 四个相等的列 */
+      gap: 20px; /* 元素之间的空隙 */
+    }
+
+
+    .box {
+      width: 300px;
+      text-align: center; /* 文字水平居中 */
+    }
+
+    .box img {
+      width: 150%;
+      height: auto;
+      border-radius: 20px;
+    }
+    .box p{
+        background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex; /* 使用 flex 布局 */
+  align-items: center; /* 垂直居中 */
+  width: 150%;
+      height: 340px;
+      font-size: 24px; /* 调整段落字体大小 */
+      margin: 0; /* 重置段落的默认外边距 */
+      line-height:38px;
+    }
+    
+    .two-columns {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 四个相等的列 */
+      gap: 20px; /* 元素之间的空隙 */
+   
+    }
+    .column {
+      flex: 0 0 48%; /* 兩列，每列佔48%寬度 */
+      box-sizing: border-box;
+      padding: 10px;
+      margin-top: 10px;
+    }
+    .video-section {
+      text-align: center;
+      padding: 40px;
+      border-radius: 20px; /* 圓角 */
+    }
+
+    .video-description {
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.8); /* 白色半透明底色 */
+      border-radius: 20px; /* 圓角 */
+      font-size: 24px; /* 调整段落字体大小 */
+      margin: 0; /* 重置段落的默认外边距 */
+      line-height:38px;
+    }
+ .video-description img{
+    width:750px;
+      height: 300px;
+      border-radius: 20px; /* 圓角 */
+      align-items: center; /* 垂直居中 */
+    }
+
+    footer{ 
+    color: #adadad;
+    background-color:#efefef ;
+    margin: auto;
+    text-align: center;
+    width: 940;
+    font-size: 24px;
+    line-height: 50px;
+}
+
+.pics{ position:relative;}
+.pics img{ position:absolute;
+  /* 淡出淡入效果2秒 */
+  -webkit-transition: opacity 2s ease-in-out;
+  -moz-transition: opacity 2s ease-in-out;
+  -o-transition: opacity 2s ease-in-out;
+  transition: opacity 2s ease-in-out;
+ }
+ .pics img:last-child:hover{
+   /* 滑入時第一張透明度設0 */
+    opacity:0;}
+     
+  </style>
+</head>
+<body>
+
+<header>
+    <h1 class="logo"><a href="index.htm"></a><img src="圖片庫/logo/313242.jpg" alt="Logo"></a></h1>
+    <nav>
+        <ul class="menu">
+            <li><a href="#HOME">Home</a></li>
+            <li><a href="#ATTRACTIONS">Attractions</a></li>
+            <li><a href="#VIDEO">Video</a></li>
+        </ul>
+  </nav>
+</header>
+<section id="HOME">
+<section>
+  <img class="main-image" src="圖片庫/封面.jpg" alt="main Image">
+  <!-- 將 "home-image-url.jpg" 替換為實際首頁圖的URL -->
+</section>
+</section>
+
+<section id="ATTRACTIONS">
+<div class="container">
+    <div class="box">
+      <img src="圖片庫/風景/313161_0.jpg" alt="Image 1">
+    </div>
+    <div class="box">
+      <p>忍野八海是位於山梨縣忍野村的湧泉群，包括了出口池、御釜池、底抜池、銚子池、湧池、濁池、鏡池、菖蒲池,來源為富士山融化並經過80年過濾的雪水，為國家指定天然記念物、名水百選、新富岳百景之一。 </p>
+    </div>
+    <div class="box">
+      <img src="圖片庫/食物/313151_0.jpg" alt="Image 3">
+    </div>
+    <div class="box">
+      <p>日本食物豐富多樣，以新鮮、精緻、平衡的口味著稱。壽司是代表之一，利用新鮮生魚片搭配酢飯，簡潔而美味。此外，和果子、抹茶點心等甜點也是日本飲食文化中的瑰寶。无論是街頭小吃還是高級料理，都融合了日本對食材品質和烹飪技巧的極致追求。</p>
+    </div>
+    
+    
+        <div class="box">
+          <img src="圖片庫/淺草寺/313074_0.jpg" alt="Image 2">
+        </div>
+        <div class="box">
+          <p>淺草寺是日本東京最古老且最著名的佛寺之一，位於東京台東區。它的歷史可以追溯至公元628年，被視為護國寺，供奉著觀世音菩薩。寺廟的雷門是一個巨大的門樓，標誌性的紅燈籠和雷門前的街區是淺草的代表景點。在寺廟內,訪客可欣賞五層寶塔和三層飛檐，感受悠久的宗教氛圍。淺草寺每年吸引著大量遊客，成為東京文化和歷史的象徵。</p>
+        </div>
+        <div class="box">
+          <img src="圖片庫/富士山-河口湖/313156_0.jpg" alt="Image 4">
+        </div>
+        <div class="box">
+          <p>富士山河口湖位於日本，是富士五湖之一，以雄偉的富士山為背景而聞名。湖畔環繞著美麗的風景，四季景色變幻，櫻花春季盛開，夏季湖水碧綠，秋季落葉如畫，冬季被白雪覆蓋。遊客可漫步湖畔、品味當地美食，湖光山色令人陶醉。湖區還設有各種戶外活動，是自然愛好者和攝影者的理想之地。</p>
+        
+  </div>
+</div>
+</section>
+</section>
+
+<section id="VIDEO">
+<section>
+    <div class="two-columns">
+      <div class="column">
+        <iframe width="1020" height="630" src="圖片庫/5ee35fb2-c009-4567-a2ab-f1d173f479d7.mp4" frameborder="0" allowfullscreen></iframe>
+        <!-- 實際影片的URL -->
+      </div>
+      <div class="column video-description">
+       
+        <p>SHIBUYA SKY的觀景體驗由三個區域組成:</p>
+            <p>14樓到45樓的過渡空間「SKY GATE」</p>
+            <p>46樓的室內觀景走廊「SKY GALLERY」</p>
+            <p> 屋頂觀景空間「SKY STAGE」</p>
+                <p>也請享受咖啡廳、紀念品商店和拍照服務。</p>
+                <img src="圖片庫/313773.jpg" alt="Image 6">
+    </div>
+  </section>
+</section>
+     
+  <footer>
+    <p> © 2023 和のスタイルが目の前に </p>
+ </footer>
+</body>
+</html>
